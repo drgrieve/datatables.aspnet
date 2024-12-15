@@ -5,7 +5,7 @@
     <Copyright>2014-2016 Anderson Matos (MIT License)</Copyright>
     <AssemblyTitle>DataTables.AspNet.Core</AssemblyTitle>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <VersionPrefix>3.0.1</VersionPrefix>
+    <VersionPrefix>3.0.2</VersionPrefix>
     <Authors>Anderson Matos</Authors>
     <TargetFrameworks>net8.0</TargetFrameworks>
     <AssemblyName>DataTables.AspNet.Core</AssemblyName>
