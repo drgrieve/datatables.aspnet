@@ -15,13 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTables.AspNet.Core", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTables.AspNet.AspNetCore", "src\DataTables.AspNet.AspNetCore\DataTables.AspNet.AspNetCore.csproj", "{A99E62EC-9FA2-4564-A4E1-92BDF40B9752}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTables.AspNet.Extensions.AnsiSql", "extensions\DataTables.AspNet.Extensions.AnsiSql\DataTables.AspNet.Extensions.AnsiSql.csproj", "{28978ACF-EB4D-4F8E-AF07-2A94124D16C9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTables.AspNet.Extensions.DapperExtensions", "extensions\DataTables.AspNet.Extensions.DapperExtensions\DataTables.AspNet.Extensions.DapperExtensions.csproj", "{1458F8A6-EA99-4A3A-B877-A8B761F7749B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTables.AspNet.AspNetCore.Tests", "tests\DataTables.AspNet.AspNetCore.Tests\DataTables.AspNet.AspNetCore.Tests.csproj", "{C83A8298-6186-4372-A763-C17961F3C98E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTables.AspNet.Extensions.DapperExtensions.Tests", "tests\DataTables.AspNet.Extensions.DapperExtensions.Tests\DataTables.AspNet.Extensions.DapperExtensions.Tests.csproj", "{5B40F60E-EDAA-49C6-9850-F2C606847C93}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{B4AB7D94-A13B-4F8B-8AC6-7041CCDFC985}"
 	ProjectSection(SolutionItems) = preProject
@@ -47,22 +41,10 @@ Global
 		{A99E62EC-9FA2-4564-A4E1-92BDF40B9752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A99E62EC-9FA2-4564-A4E1-92BDF40B9752}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A99E62EC-9FA2-4564-A4E1-92BDF40B9752}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28978ACF-EB4D-4F8E-AF07-2A94124D16C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28978ACF-EB4D-4F8E-AF07-2A94124D16C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28978ACF-EB4D-4F8E-AF07-2A94124D16C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28978ACF-EB4D-4F8E-AF07-2A94124D16C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1458F8A6-EA99-4A3A-B877-A8B761F7749B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1458F8A6-EA99-4A3A-B877-A8B761F7749B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1458F8A6-EA99-4A3A-B877-A8B761F7749B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1458F8A6-EA99-4A3A-B877-A8B761F7749B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C83A8298-6186-4372-A763-C17961F3C98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C83A8298-6186-4372-A763-C17961F3C98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C83A8298-6186-4372-A763-C17961F3C98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C83A8298-6186-4372-A763-C17961F3C98E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B40F60E-EDAA-49C6-9850-F2C606847C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B40F60E-EDAA-49C6-9850-F2C606847C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B40F60E-EDAA-49C6-9850-F2C606847C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B40F60E-EDAA-49C6-9850-F2C606847C93}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD979053-5867-4766-94C3-26AF5547DA82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD979053-5867-4766-94C3-26AF5547DA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD979053-5867-4766-94C3-26AF5547DA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -74,10 +56,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{489F1F8C-ABDE-4FB2-AD6D-5463E1F067E0} = {7C40D7E9-8127-4204-918D-7126DF55D34E}
 		{A99E62EC-9FA2-4564-A4E1-92BDF40B9752} = {7C40D7E9-8127-4204-918D-7126DF55D34E}
-		{28978ACF-EB4D-4F8E-AF07-2A94124D16C9} = {1C3565DA-C7DF-4312-A394-ECBAE5D89365}
-		{1458F8A6-EA99-4A3A-B877-A8B761F7749B} = {1C3565DA-C7DF-4312-A394-ECBAE5D89365}
 		{C83A8298-6186-4372-A763-C17961F3C98E} = {505A3DE7-8AA9-416B-8356-DD2A38714F5D}
-		{5B40F60E-EDAA-49C6-9850-F2C606847C93} = {505A3DE7-8AA9-416B-8356-DD2A38714F5D}
 		{FD979053-5867-4766-94C3-26AF5547DA82} = {E2CD3569-9291-46EE-874F-97617823990F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

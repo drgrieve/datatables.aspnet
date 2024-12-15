@@ -24,8 +24,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\extensions\DataTables.AspNet.Extensions.DapperExtensions\DataTables.AspNet.Extensions.DapperExtensions.csproj" />
-  </ItemGroup>
-
 </Project>
