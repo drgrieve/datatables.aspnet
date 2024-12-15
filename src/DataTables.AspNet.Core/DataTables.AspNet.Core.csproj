@@ -9,14 +9,16 @@
     <Authors>Anderson Matos</Authors>
     <TargetFrameworks>net8.0</TargetFrameworks>
     <AssemblyName>DataTables.AspNet.Core</AssemblyName>
-    <PackageId>DataTables.AspNet.Core</PackageId>
-    <PackageTags>DataTables;DataTables.Mvc;DataTables.AspNet;Mvc;AspNet;WebApi</PackageTags>
+    <PackageId>DataTables.AspNet.Core2</PackageId>
+    <PackageTags>DataTables;DataTables.Mvc;DataTables.AspNet;Mvc;</PackageTags>
     <PackageReleaseNotes>Updated dependencies and framework.</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/ALMMa/datatables.aspnet</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/drgrieve/datatables.aspnet/</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/ALMMa/datatables.aspnet/master/LICENSE</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/ALMMa/datatables.aspnet</RepositoryUrl>
+    <RepositoryUrl>https://github.com/drgrieve/datatables.aspnet/</RepositoryUrl>
+    <Company>Anderson Matos,David Grieve</Company>
+    <Title>AspNetCore implementation for DataTables.AspNet</Title>
   </PropertyGroup>
 
 </Project>
