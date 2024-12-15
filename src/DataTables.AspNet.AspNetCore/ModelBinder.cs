@@ -82,7 +82,7 @@ namespace DataTables.AspNet.AspNetCore
 
             // Parse columns & column sorting.
             var columns = ParseColumns(values, options.RequestNameConvention);
-            //var sorting = ParseSorting(columns, values, options.RequestNameConvention);
+            var sorting = ParseSorting(columns, values, options.RequestNameConvention);
 
             if (options.IsRequestAdditionalParametersEnabled && parseAditionalParameters != null)
             {
@@ -165,33 +165,32 @@ namespace DataTables.AspNet.AspNetCore
         }
 
         /// <summary>
-        /// For internal use only.
         /// Parse sort collection.
         /// </summary>
         /// <param name="columns">Column collection to use when parsing sort.</param>
         /// <param name="values">Request parameters.</param>
         /// <param name="names">Name convention for request parameters.</param>
         /// <returns></returns>
-        //private static IEnumerable<ISort> ParseSorting(IEnumerable<IColumn> columns, IValueProvider values, IRequestNameConvention names)
-        //{
-        //    var sorting = new List<ISort>();
+        private static IEnumerable<ISort> ParseSorting(IEnumerable<IColumn> columns, IValueProvider values, IRequestNameConvention names)
+        {
+            var sorting = new List<ISort>();
 
-        //    for (int i = 0; i < columns.Count(); i++)
-        //    {
-        //        var sortField = values.GetValue(string.Format(names.SortField, i));
-        //        if (!Parse<int>(sortField, out int _sortField)) break;
+            for (int i = 0; i < columns.Count(); i++)
+            {
+                var sortField = values.GetValue(string.Format(names.SortField, i));
+                if (!Parse<int>(sortField, out int _sortField)) break;
 
-        //        var column = columns.ElementAt(_sortField);
+                var column = columns.ElementAt(_sortField);
 
-        //        var sortDirection = values.GetValue(string.Format(names.SortDirection, i));
-        //        Parse<string>(sortDirection, out string _sortDirection);
+                var sortDirection = values.GetValue(string.Format(names.SortDirection, i));
+                Parse<string>(sortDirection, out string _sortDirection);
 
-        //        if (column.SetSort(i, _sortDirection))
-        //            sorting.Add(column.Sort);
-        //    }
+                if (column.SetSort(i, _sortDirection))
+                    sorting.Add(column.Sort);
+            }
 
-        //    return sorting;
-        //}
+            return sorting;
+        }
 
         /// <summary>
         /// Parses a possible raw value and transforms into a strongly-typed result.

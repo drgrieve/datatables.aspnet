@@ -56,7 +56,7 @@ namespace DataTables.AspNet.AspNetCore
         {
             var response = DataTablesResponse<TDataType>.Create(request, totalRecords, totalRecordsFiltered, data, additionalParameters);
             if (response == null) return null;
-            return new DataTablesJsonResult<TDataType>(response);
+            return new JsonResult(response);
         }
     }
 }
