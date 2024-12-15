@@ -18,6 +18,7 @@ or
 
 [ModelBinder(typeof(ModelBinder))] IDataTablesRequest model
 
+```
 public virtual IActionResult ListData(IDataTablesRequest model)
 {
     var data = _service.Users_Query(model);
@@ -25,6 +26,7 @@ public virtual IActionResult ListData(IDataTablesRequest model)
 
     return model.GetActionResult(total, data.TotalCount, data);
 }
+```
 
 ## Standard NuGet packages
 
