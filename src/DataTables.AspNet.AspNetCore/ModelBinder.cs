@@ -127,7 +127,8 @@ namespace DataTables.AspNet.AspNetCore
             {
                 // Parses Field value.
                 var columnField = values.GetValue(string.Format(names.ColumnField, counter));
-                if (!Parse<string>(columnField, out string _columnField)) break;
+                if (columnField.Length == 0) break;
+                Parse<string>(columnField, out string _columnField);
 
                 // Parses Name value.
                 var columnName = values.GetValue(string.Format(names.ColumnName, counter));

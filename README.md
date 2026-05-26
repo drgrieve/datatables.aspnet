@@ -1,6 +1,6 @@
 # Datatables.AspNet
 
-Simplified opinionated model binding and mapping from jQuery DataTables into .NET typed models with support for `.NET 8.0`.
+Simplified opinionated model binding and mapping from jQuery DataTables into .NET typed models with support for `.NET 10.0`.
 
 This is a fork from (https://github.com/ALMMa/datatables.aspnet) which is the orginal author, but no longer maintained
 
@@ -8,7 +8,7 @@ This is a fork from (https://github.com/ALMMa/datatables.aspnet) which is the or
 
 This library is compatible with the following stacks:
 
-- `.NET 8.0`
+- `.NET 10.0`
 
 ## Basic usage
 
